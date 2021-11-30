@@ -274,3 +274,17 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# We cannot upload the raw data :-(
+df_wm_kriterier_raven_audiogram.rds
+for_audiogram.RDS'
+./Data
+
+
+# RStudio related stuff
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+/*.Rcheck/
+.Rproj.user/
