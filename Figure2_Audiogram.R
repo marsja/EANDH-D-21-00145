@@ -2,10 +2,10 @@ require(tidyverse)
 
 rm(list=ls())
 # Read the data created for the Audiogram purposes (note, this data cannot be shared online)
-df_study <- readRDS('./Manuscript_Files/Table_Data/for_audiogram.RDS')
+df_study <- readRDS('./Data/for_audiogram.RdS')
 
 # Get the gains:
-df_gains <- readRDS('Gains-19-Nov-2021_Cleaned.RDs') %>% 
+df_gains <- readRDS('./Data/Gains_Cleaned.RDs') %>% 
   filter(Group != 'Hearing Loss') %>%
   mutate(Freq = round(Freq, 1)) %>%
   filter(Freq %in% c(125,  250,  500, 1000, 2000, 3174.8, 4000, 6349.6, 8000)) %>%
@@ -164,4 +164,3 @@ res.t <- t.test(filter(df.aud, Group == "Normal Hearing")$age,
 report::report(res.t)
 
 res.levene <- car::leveneTest(age~Group, df.aud)
-report::report(res.levene)
