@@ -277,7 +277,7 @@ TSWLatexianTemp*
 
 # We cannot upload the raw data :-(
 df_wm_kriterier_raven_audiogram.rds
-for_audiogram.RDS'
+for_audiogram.RDS
 ./Data
 
 
