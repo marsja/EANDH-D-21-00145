@@ -276,9 +276,7 @@ TSWLatexianTemp*
 *.lpz
 
 # We cannot upload the raw data :-(
-df_wm_kriterier_raven_audiogram.rds
-for_audiogram.RDS
-./Data
+./Data/*
 
 
 # RStudio related stuff
