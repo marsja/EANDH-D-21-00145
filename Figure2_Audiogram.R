@@ -145,7 +145,9 @@ audgg.bw <- ggplot(data = cis_btr2, aes(x = freq, y = mean.dB)) +
         strip.text.x = element_text(size=18) ) 
 
 audgg.bw + facet_wrap(~Group) 
-ggsave("./Figures/Figure-Audiogram_better_worse_Fast_Linear.tiff", width=14.4, height = 7.2, dpi = 1200)
+
+# Note that DPI should be 1200 for the publication ready plot:
+ggsave("./Figures/Figure-Audiogram_better_worse_Fast_Linear.tiff", width=14.4, height = 7.2, dpi = 300)
 
 
 
