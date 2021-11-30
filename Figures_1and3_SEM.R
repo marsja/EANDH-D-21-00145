@@ -9,7 +9,7 @@ mfs <- c("Hagerman \n 4-talker fast", "Hagerman \n 4-talker np",
         "PTA4", "Age", "SPiN", "Cognitive \n Functioning")
 
 # Here we are generating the .tiff submitted to EANDH:
-tiff('./Manuscript_Files/Figures/Figure-2-rev2.tiff', units="in", width=17.4, height=7.2, res=1200, compression = 'lzw')
+tiff('./Figures/Figure-2-rev2.tiff', units="in", width=17.4, height=7.2, res=1200, compression = 'lzw')
 
 # We use layout so we can visualize both models next to each other:
 layout(t(1:2))
@@ -36,7 +36,7 @@ dev.off()
 
 # This is for the theoretical model (Figure 1)
 # Note, however, that this generated figure was also edited in an image editor software (i.e., Affinity Designer)
-freepar <- readRDS("./Manuscript_Files/Table_Data/for_vis_sep_revision.rds")
+freepar <- readRDS("./Figures/for_vis_sep_revision.rds")
 
 edLbls <- seq(1, 25)
 tiff('./Manuscript_Files/Figures/Figure-1-rev2.tiff', units="in", width=8, height=4, res=1200, compression = 'lzw')
