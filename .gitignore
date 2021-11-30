@@ -276,7 +276,7 @@ TSWLatexianTemp*
 *.lpz
 
 # We cannot upload the raw data :-(
-./Data/*
+Data/
 
 
 # RStudio related stuff
