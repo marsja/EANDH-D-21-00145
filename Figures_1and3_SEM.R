@@ -36,10 +36,10 @@ dev.off()
 
 # This is for the theoretical model (Figure 1)
 # Note, however, that this generated figure was also edited in an image editor software (i.e., Affinity Designer)
-freepar <- readRDS("./Figures/for_vis_sep_revision.rds")
+freepar <- readRDS("./Fig_Table_Data/for_vis_sep_revision.rds")
 
 edLbls <- seq(1, 25)
-tiff('./Manuscript_Files/Figures/Figure-1-rev2.tiff', units="in", width=8, height=4, res=1200, compression = 'lzw')
+tiff('./Figures/Figure-1-rev2.tiff', units="in", width=8, height=4, res=1200, compression = 'lzw')
 test <- semPlot::semPaths(freepar, include=2, what='path', edgeLabels=edLbls, ask=F, layout='tree3', 
                   style="lisrel", sizeMan=14, sizeMan2=6, sizeLat = 16, sizeLat2 = 8,
                   whatLabels='name', edge.color='black',title.color = 'black',
