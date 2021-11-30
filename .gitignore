@@ -286,3 +286,4 @@ Data/
 .Ruserdata
 /*.Rcheck/
 .Rproj.user/
+.Rproj
